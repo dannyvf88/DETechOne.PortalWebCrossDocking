@@ -62,7 +62,7 @@
             </div>
 
             <div class="auth-submit">
-                <a href="#" class="btn btn-primary">Ingresar</a>
+                <a href="#" class="btn btn-primary" onclick="Login()">Ingresar</a>
                 <a href="#" class="auth-forgot-password float-end">Olvidaste Contraseña?</a>
             </div>
             <div class="divider"></div>
@@ -71,7 +71,7 @@
     </div>
     
     <!-- Javascripts -->
-    <script src="../Content/ui/vendor/jquery/jquery-3.5.1.min.js"></script>
+ <script src="../Content/ui/vendor/jquery/jquery-3.5.1.min.js"></script>
  <script src="../Content/ui/vendor/bootstrap/js/bootstrap.min.js"></script>
  <script src="../Content/ui/vendor/perfectscroll/perfect-scrollbar.min.js"></script>
  <script src="../Content/ui/vendor/pace/pace.min.js"></script>
@@ -79,6 +79,49 @@
  <script src="../Content/ui/js/main.min.js"></script>
  <script src="../Content/ui/js/custom.js"></script>
  <script src="../Content/ui/js/pages/dashboard.js"></script>
+
+    <script> 
+        function Login() {
+            debugger;
+            //$.blockUI({
+            //    message: '<div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span></div>'
+            //});
+
+            $.ajax({
+                type: "POST",
+                dataType: 'json',
+                contentType: "application/json; charset=utf-8",
+                data: '{ usuario: "' + document.getElementById('signInEmail').value + '", password: "' + document.getElementById('signInPassword').value + '" }',
+                url: "login.aspx/Login",
+                success: function (msg) {
+                    $.unblockUI();
+                    if (!msg.d.success) {
+                        debugger;
+                        Swal.fire({
+                            icon: "error",
+                            title: "Oops...",
+                            text: "Los datos de usuario y contraseña son incorrectos"
+                        })
+                    }
+                    else {
+
+                        window.location.href = 'Default.aspx';
+                    }
+
+                },
+                error: function (request, message, error) {
+                    console.log(request.responseJSON);
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: request.responseJSON.d.message
+                    })
+                }
+            });
+
+        }
+    </script>
 </body>
+
 </html>
 
