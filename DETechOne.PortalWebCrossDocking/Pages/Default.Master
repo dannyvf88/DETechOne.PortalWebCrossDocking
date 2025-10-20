@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="DETechOne.PortalWebCrossDocking.pages.Default" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title><%: Page.Title %> - Portal</title>
+
+  <!-- Google Fonts: Poppins, Montserrat, Material Icons -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+
+  <!-- Bundles CSS -->
+  <webopt:BundleReference runat="server" Path="~/dist/css" />
+
+  <!-- Favicons (sin ResolveUrl) -->
+  <link id="fav32" runat="server" rel="icon" type="image/png" sizes="32x32" href="~/Content/ui/img/brand/favicon-32.png" />
+  <link id="fav16" runat="server" rel="icon" type="image/png" sizes="16x16" href="~/Content/ui/img/brand/favicon-16.png" />
+    
+  <!-- Head por página -->
+  <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+  <form id="form1" runat="server">
+    <asp:ScriptManager ID="sm" runat="server" />
+
+    <!-- contenedor raíz del theme -->
+    <div class="app align-content-stretch d-flex flex-wrap">
+
+      <!-- Sidebar -->
+      <div class="app-sidebar">
+        <div class="logo">
+          <a runat="server" href="~/" class="logo-icon">
+            <span class="logo-text">Portal</span>
+          </a>
+          <div class="sidebar-user-switcher user-activity-online">
+            <a href="#">
+              <img runat="server" src="~/Content/ui/img/avatars/default.png" alt="Usuario" />
+              <span class="activity-indicator"></span>
+              <span class="user-info-text">
+                Usuario<br />
+                <span class="user-state-info">Activo</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Menú lateral -->
+        <div class="app-menu">
+          <ul class="accordion-menu">
+            <li class="active-page">
+              <a runat="server" href="~/Default.aspx">
+                <i class="material-icons-two-tone">space_dashboard</i>Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="material-icons-two-tone">description</i>Reportes
+                <i class="material-icons has-sub-menu">keyboard_arrow_right</i>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a runat="server" href="~/Default.aspx">General</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Área de contenido -->
+      <div class="app-content">
+
+        <!-- Header superior -->
+        <div class="app-header">
+          <nav class="navbar navbar-light navbar-expand-lg">
+            <div class="container-fluid">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link hide-sidebar-toggle-button" href="#"><i class="material-icons">first_page</i></a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    <i class="material-icons">notifications</i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li class="dropdown-header">Notificaciones</li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Sin novedades</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Contenido de página -->
+        <div class="content-wrapper">
+          <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+          </div>
+        </div>
+
+      </div><!-- /app-content -->
+    </div><!-- /app -->
+
+    <!-- Bundles JS -->
+    <webopt:BundleReference runat="server" Path="~/dist/js" />
+
+    <!-- Scripts por página -->
+    <asp:ContentPlaceHolder ID="ScriptsContent" runat="server" />
+  </form>
+</body>
+</html>
+
