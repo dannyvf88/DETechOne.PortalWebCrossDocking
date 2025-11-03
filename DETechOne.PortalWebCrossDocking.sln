@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.35826.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DETechOne.PortalWebCrossDocking", "DETechOne.PortalWebCrossDocking\DETechOne.PortalWebCrossDocking.csproj", "{A71B6AB7-EA3C-4566-904C-77847599F79C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DETechOne.PortalWebCrossDocking.Domain", "DETechOne.PortalWebCrossDocking.Domain\DETechOne.PortalWebCrossDocking.Domain.csproj", "{0B129817-3BE2-4DD7-A028-FD5E4357160D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DETechOne.PortalWebCrossDocking.Application", "DETechOne.PortalWebCrossDocking.Application\DETechOne.PortalWebCrossDocking.Application.csproj", "{AB971191-8370-46E9-8717-1D6D5E09A326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DETechOne.PortalWebCrossDocking.Infrastructure", "DETechOne.PortalWebCrossDocking.Infrastructure\DETechOne.PortalWebCrossDocking.Infrastructure.csproj", "{1533666E-7832-419C-B57E-F5BB80DAA37A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{A71B6AB7-EA3C-4566-904C-77847599F79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A71B6AB7-EA3C-4566-904C-77847599F79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A71B6AB7-EA3C-4566-904C-77847599F79C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B129817-3BE2-4DD7-A028-FD5E4357160D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B129817-3BE2-4DD7-A028-FD5E4357160D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B129817-3BE2-4DD7-A028-FD5E4357160D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B129817-3BE2-4DD7-A028-FD5E4357160D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB971191-8370-46E9-8717-1D6D5E09A326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB971191-8370-46E9-8717-1D6D5E09A326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB971191-8370-46E9-8717-1D6D5E09A326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB971191-8370-46E9-8717-1D6D5E09A326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1533666E-7832-419C-B57E-F5BB80DAA37A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1533666E-7832-419C-B57E-F5BB80DAA37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1533666E-7832-419C-B57E-F5BB80DAA37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1533666E-7832-419C-B57E-F5BB80DAA37A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -94,7 +94,7 @@
                 data: '{ usuario: "' + document.getElementById('signInEmail').value + '", password: "' + document.getElementById('signInPassword').value + '" }',
                 url: "login.aspx/Login",
                 success: function (msg) {
-                    $.unblockUI();
+                    //$.unblockUI();
                     if (!msg.d.success) {
                         debugger;
                         Swal.fire({
@@ -105,7 +105,7 @@
                     }
                     else {
 
-                        window.location.href = 'Default.aspx';
+                        window.location.href = 'start.aspx';
                     }
 
                 },
