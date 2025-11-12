@@ -62,7 +62,7 @@
             </div>
 
             <div class="auth-submit">
-                <a href="#" class="btn btn-primary">Ingresar</a>
+                <a href="customer.aspx" class="btn btn-primary">Ingresar</a>
                 <a href="#" class="auth-forgot-password float-end">Olvidaste Contraseña?</a>
             </div>
             <div class="divider"></div>

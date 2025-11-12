@@ -98,6 +98,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\ui\img\backgrounds\sign-up.svg" />
+    <Content Include="Pages\customer-all.aspx" />
+    <Content Include="Pages\customer.aspx" />
     <Content Include="Pages\login.aspx" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="ViewSwitcher.ascx" />
@@ -107,14 +109,24 @@
     <Compile Include="App_Data\BundleConfig.cs" />
     <Compile Include="App_Data\NoMinify.cs" />
     <Compile Include="App_Data\RouteConfig.cs" />
+    <Compile Include="Pages\customer-all.aspx.cs">
+      <DependentUpon>customer-all.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\customer-all.aspx.designer.cs">
+      <DependentUpon>customer-all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\customer.aspx.cs">
+      <DependentUpon>customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\customer.aspx.designer.cs">
+      <DependentUpon>customer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Default.Master.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Default.Master.designer.cs" />
-    <Compile Include="Pages\start.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\start.aspx.designer.cs" />
     <Compile Include="Pages\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -888,14 +900,6 @@
     </Content>
     <Content Include="Pages\Default.Master.designer.cs">
       <DependentUpon>Default.Master</DependentUpon>
-    </Content>
-    <Content Include="Pages\start.aspx" />
-    <Content Include="Pages\start.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>start.aspx</DependentUpon>
-    </Content>
-    <Content Include="Pages\start.aspx.designer.cs">
-      <DependentUpon>start.aspx</DependentUpon>
     </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />

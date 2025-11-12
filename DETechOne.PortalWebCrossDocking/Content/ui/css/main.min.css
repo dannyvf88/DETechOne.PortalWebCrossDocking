@@ -965,7 +965,7 @@ h1, h2, h3, h4, h5, h6 {
         background: #f5f7fa
     }
 
-    .app-menu > ul > li > a {
+  /*  .app-menu > ul > li > a {
         text-decoration: none;
         color: #40475c;
         font-size: 14px;
@@ -978,7 +978,7 @@ h1, h2, h3, h4, h5, h6 {
         -moz-transition: all .2s ease-in-out;
         -o-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out
-    }
+    }*/
 
         .app-menu > ul > li.active-page > a, .app-menu > ul > li.open > a, .app-menu > ul > li > a:hover {
             color: #2269f5
@@ -1020,7 +1020,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(90deg)
 }
 
-.app-menu > ul > li ul li a {
+/*.app-menu > ul > li ul li a {
     padding: 5px 33px;
     text-decoration: none;
     color: #5e606b;
@@ -1030,7 +1030,7 @@ h1, h2, h3, h4, h5, h6 {
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out
-}
+}*/
 
     .app-menu > ul ul li.open > a, .app-menu > ul > li ul li a.active, .app-menu > ul > li ul li a:hover {
         color: #1e1e24;
@@ -6144,7 +6144,7 @@ span.flatpickr-weekday {
 }
 
 .app-auth-sign-in .app-auth-background {
-    background: url(../images/backgrounds/login.svg) no-repeat;
+    background: url(../img/avatars/cropped-LogoAltaSF_Color.png) no-repeat;
     background-size: 60%;
     background-position: center
 }
@@ -6591,3 +6591,4 @@ span.flatpickr-weekday {
         margin-bottom: 10px
     }
 }
+

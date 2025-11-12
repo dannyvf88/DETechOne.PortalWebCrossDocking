@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|d:\\desarrollos\\detechone.portalwebcrossdocking\\detechone.portalwebcrossdocking\\content\\ui\\css\\main.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|solutionrelative:detechone.portalwebcrossdocking\\content\\ui\\css\\main.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|d:\\desarrollos\\detechone.portalwebcrossdocking\\detechone.portalwebcrossdocking\\content\\ui\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|solutionrelative:detechone.portalwebcrossdocking\\content\\ui\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|d:\\desarrollos\\detechone.portalwebcrossdocking\\detechone.portalwebcrossdocking\\content\\ui\\vendor\\apexcharts\\apexcharts.amd.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|solutionrelative:detechone.portalwebcrossdocking\\content\\ui\\vendor\\apexcharts\\apexcharts.amd.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|d:\\desarrollos\\detechone.portalwebcrossdocking\\detechone.portalwebcrossdocking\\start.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|solutionrelative:detechone.portalwebcrossdocking\\start.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|d:\\desarrollos\\detechone.portalwebcrossdocking\\detechone.portalwebcrossdocking\\pages\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|solutionrelative:detechone.portalwebcrossdocking\\pages\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\detechone.portalwebcrossdocking\\pages\\customer-all.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|solutionrelative:detechone.portalwebcrossdocking\\pages\\customer-all.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|d:\\desarrollos\\detechone.portalwebcrossdocking\\detechone.portalwebcrossdocking\\pages\\default.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|solutionrelative:detechone.portalwebcrossdocking\\pages\\default.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\detechone.portalwebcrossdocking\\pages\\customer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|solutionrelative:detechone.portalwebcrossdocking\\pages\\customer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\detechone.portalwebcrossdocking\\content\\ui\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|solutionrelative:detechone.portalwebcrossdocking\\content\\ui\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\detechone.portalwebcrossdocking\\pages\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A71B6AB7-EA3C-4566-904C-77847599F79C}|DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking.csproj|solutionrelative:detechone.portalwebcrossdocking\\pages\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,58 +30,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "main.css",
-              "DocumentMoniker": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Content\\ui\\css\\main.css",
-              "RelativeDocumentMoniker": "DETechOne.PortalWebCrossDocking\\Content\\ui\\css\\main.css",
-              "ToolTip": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Content\\ui\\css\\main.css",
-              "RelativeToolTip": "DETechOne.PortalWebCrossDocking\\Content\\ui\\css\\main.css",
-              "ViewState": "AQIAAPUYAAAAAAAAAAAewAkZAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-20T17:33:53.917Z",
+              "DocumentIndex": 0,
+              "Title": "customer-all.aspx",
+              "DocumentMoniker": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Pages\\customer-all.aspx",
+              "RelativeDocumentMoniker": "DETechOne.PortalWebCrossDocking\\Pages\\customer-all.aspx",
+              "ToolTip": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Pages\\customer-all.aspx",
+              "RelativeToolTip": "DETechOne.PortalWebCrossDocking\\Pages\\customer-all.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T07:58:39.907Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "apexcharts.amd.js",
-              "DocumentMoniker": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Content\\ui\\vendor\\apexcharts\\apexcharts.amd.js",
-              "RelativeDocumentMoniker": "DETechOne.PortalWebCrossDocking\\Content\\ui\\vendor\\apexcharts\\apexcharts.amd.js",
-              "ToolTip": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Content\\ui\\vendor\\apexcharts\\apexcharts.amd.js",
-              "RelativeToolTip": "DETechOne.PortalWebCrossDocking\\Content\\ui\\vendor\\apexcharts\\apexcharts.amd.js",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-20T17:26:28.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.min.css",
-              "DocumentMoniker": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Content\\ui\\css\\main.min.css",
-              "RelativeDocumentMoniker": "DETechOne.PortalWebCrossDocking\\Content\\ui\\css\\main.min.css",
-              "ToolTip": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Content\\ui\\css\\main.min.css",
-              "RelativeToolTip": "DETechOne.PortalWebCrossDocking\\Content\\ui\\css\\main.min.css",
-              "ViewState": "AQIAAO4XAAAAAAAAAAAewAUYAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-20T17:26:01.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Start.html",
-              "DocumentMoniker": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Start.html",
-              "RelativeDocumentMoniker": "DETechOne.PortalWebCrossDocking\\Start.html",
-              "ToolTip": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Start.html",
-              "RelativeToolTip": "DETechOne.PortalWebCrossDocking\\Start.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T16:57:48.031Z",
+              "Title": "customer.aspx",
+              "DocumentMoniker": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Pages\\customer.aspx",
+              "RelativeDocumentMoniker": "DETechOne.PortalWebCrossDocking\\Pages\\customer.aspx",
+              "ToolTip": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Pages\\customer.aspx",
+              "RelativeToolTip": "DETechOne.PortalWebCrossDocking\\Pages\\customer.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T07:52:23.303Z",
               "EditorCaption": ""
             },
             {
@@ -98,12 +68,11 @@
               "RelativeToolTip": "DETechOne.PortalWebCrossDocking\\Pages\\login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-10-20T16:41:42.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T16:41:42.669Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Default.Master",
               "DocumentMoniker": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Pages\\Default.Master",
               "RelativeDocumentMoniker": "DETechOne.PortalWebCrossDocking\\Pages\\Default.Master",
@@ -112,6 +81,19 @@
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-10-14T21:48:29.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "custom.css",
+              "DocumentMoniker": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Content\\ui\\css\\custom.css",
+              "RelativeDocumentMoniker": "DETechOne.PortalWebCrossDocking\\Content\\ui\\css\\custom.css",
+              "ToolTip": "D:\\Desarrollos\\DETechOne.PortalWebCrossDocking\\DETechOne.PortalWebCrossDocking\\Content\\ui\\css\\custom.css",
+              "RelativeToolTip": "DETechOne.PortalWebCrossDocking\\Content\\ui\\css\\custom.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-11T23:44:48.819Z",
               "EditorCaption": ""
             }
           ]
