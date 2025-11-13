@@ -1,0 +1,32 @@
+﻿.example-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px; /* Agrega un poco de espacio alrededor */
+}
+
+.example-content {
+    width: 100%; /* Hacer que ocupe todo el ancho disponible */
+    max-width: 800px; /* Limitar el ancho máximo para pantallas grandes */
+    overflow-x: auto; /* Permitir desplazamiento horizontal en pantallas pequeñas */
+}
+
+.table {
+    width: 100%; /* Hacer que la tabla ocupe el 100% del contenedor */
+    border-collapse: collapse; /* Mejorar el aspecto de las celdas */
+}
+
+    .table th, .table td {
+        padding: 12px; /* Espacio en las celdas */
+        text-align: left; /* Alinear texto a la izquierda */
+        border-bottom: 1px solid #ddd; /* Líneas separadoras entre filas */
+    }
+
+@media (max-width: 768px) {
+    .example-content {
+        padding: 10px; /* Menos padding en pantallas pequeñas */
+    }
+
+    .table th, .table td {
+        padding: 8px; /* Menos padding en pantallas pequeñas */
+    }
+}
