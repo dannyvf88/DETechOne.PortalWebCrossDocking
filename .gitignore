@@ -89,4 +89,4 @@ App_Data/*.bak
 
 # 3. Metadatos de servidor web local
 # Configuración local de IIS Express
-applicationhost.config
+*applicationhost.config

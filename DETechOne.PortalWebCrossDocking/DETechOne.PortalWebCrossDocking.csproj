@@ -46,12 +46,18 @@
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+=======
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+>>>>>>> 7196213009f0669cd082ac06fe47d75182c37476
     <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
     </Reference>
@@ -107,6 +113,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\PDFs\Empaque_660.pdf" />
+    <Content Include="assets\PDFs\Empaque_661.pdf" />
+    <Content Include="assets\PDFs\Etiqueta_660.pdf" />
+    <Content Include="assets\PDFs\Etiqueta_661.pdf" />
+    <Content Include="assets\PDFs\Formatos_Impresion.pdf" />
+    <Content Include="assets\RPT\SQL\dev_rfc.log" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Content\ui\img\backgrounds\error.svg" />
     <Content Include="Content\ui\img\backgrounds\lock-screen.svg" />
@@ -114,6 +126,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\ui\img\backgrounds\sign-up.svg" />
+    <Content Include="Pages\Clientes.aspx" />
+    <Content Include="Pages\customer-all.aspx" />
+    <Content Include="Pages\customer.aspx" />
     <Content Include="Pages\login.aspx" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="ViewSwitcher.ascx" />
@@ -123,14 +138,55 @@
     <Compile Include="App_Data\BundleConfig.cs" />
     <Compile Include="App_Data\NoMinify.cs" />
     <Compile Include="App_Data\RouteConfig.cs" />
+    <Compile Include="assets\RPT\HANA\Lista_Empaque_Soarma.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lista_Empaque_Soarma.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="assets\RPT\HANA\rpt_Etiqueta_HANA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Etiqueta_HANA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="assets\RPT\SQL\Lista_Empaque_Soarma.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lista_Empaque_Soarma.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="assets\RPT\SQL\rpt_Etiqueta.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Etiqueta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pages\Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\customer-all.aspx.cs">
+      <DependentUpon>customer-all.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\customer-all.aspx.designer.cs">
+      <DependentUpon>customer-all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\customer.aspx.cs">
+      <DependentUpon>customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\customer.aspx.designer.cs">
+      <DependentUpon>customer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Default.Master.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Default.Master.designer.cs" />
-    <Compile Include="Pages\start.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\start.aspx.designer.cs" />
     <Compile Include="Pages\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -146,6 +202,13 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="SiteMaster.Master.cs">
+      <DependentUpon>SiteMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMaster.Master.designer.cs">
+      <DependentUpon>SiteMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -155,6 +218,115 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\customTables.css" />
+    <Content Include="assets\css\main.min.css" />
+    <Content Include="assets\images\avatars\avatar1.jpg" />
+    <Content Include="assets\images\avatars\avatar1.png" />
+    <Content Include="assets\images\avatars\avatar2.png" />
+    <Content Include="assets\images\avatars\avatar3.jpg" />
+    <Content Include="assets\images\avatars\avatar4.png" />
+    <Content Include="assets\images\avatars\avatar6.jpg" />
+    <Content Include="assets\images\avatars\avatar7.jpg" />
+    <Content Include="assets\images\avatars\avatar8.jpg" />
+    <Content Include="assets\images\avatars\avatar9.jpg" />
+    <Content Include="assets\images\cards\card3.jpg" />
+    <Content Include="assets\images\cards\card5.jpg" />
+    <Content Include="assets\images\cards\card6.jpg" />
+    <Content Include="assets\images\cards\card7.jpg" />
+    <Content Include="assets\images\cards\card8.jpg" />
+    <Content Include="assets\images\flags\china.png" />
+    <Content Include="assets\images\flags\germany.png" />
+    <Content Include="assets\images\flags\italy.png" />
+    <Content Include="assets\images\flags\spanish.png" />
+    <Content Include="assets\images\flags\us.png" />
+    <Content Include="assets\images\icons\bitbucket.png" />
+    <Content Include="assets\images\icons\confluence.png" />
+    <Content Include="assets\images\icons\dropbox.jpg" />
+    <Content Include="assets\images\icons\facebook.png" />
+    <Content Include="assets\images\icons\google.png" />
+    <Content Include="assets\images\icons\google_drive.png" />
+    <Content Include="assets\images\icons\jira_software.png" />
+    <Content Include="assets\images\icons\onedrive.png" />
+    <Content Include="assets\images\icons\sourcetree.png" />
+    <Content Include="assets\images\icons\twitter.png" />
+    <Content Include="assets\images\neptune.png" />
+    <Content Include="assets\images\neptune_ant.png" />
+    <Content Include="assets\images\other\bank_of_america.png" />
+    <Content Include="assets\images\other\bank_of_canada.png" />
+    <Content Include="assets\images\other\facebook_logo.png" />
+    <Content Include="assets\images\other\mastercard.png" />
+    <Content Include="assets\images\SMWMS.png" />
+    <Content Include="assets\images\widgets\blog1.jpg" />
+    <Content Include="assets\images\widgets\blog2.jpg" />
+    <Content Include="assets\images\widgets\blog3.jpg" />
+    <Content Include="assets\images\widgets\blog4.jpg" />
+    <Content Include="assets\images\widgets\blog5.jpg" />
+    <Content Include="assets\images\widgets\popular-product.jpg" />
+    <Content Include="assets\images\widgets\product1.jpg" />
+    <Content Include="assets\images\widgets\product2.jpg" />
+    <Content Include="assets\images\widgets\product3.jpg" />
+    <Content Include="assets\images\widgets\product4.jpg" />
+    <Content Include="assets\js\Articulo.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\Liberacion.js" />
+    <Content Include="assets\js\LoginMain.js" />
+    <Content Include="assets\js\Logout.js" />
+    <Content Include="assets\js\main.min.js" />
+    <Content Include="assets\js\Menuactivo.js" />
+    <Content Include="assets\js\Menuoculto.js" />
+    <Content Include="assets\js\Packing.js" />
+    <Content Include="assets\js\pages\blockui.js" />
+    <Content Include="assets\js\pages\calendar.js" />
+    <Content Include="assets\js\pages\charts-apex.js" />
+    <Content Include="assets\js\pages\charts-chartjs.js" />
+    <Content Include="assets\js\pages\countdown.js" />
+    <Content Include="assets\js\pages\dashboard.js" />
+    <Content Include="assets\js\pages\datatables.js" />
+    <Content Include="assets\js\pages\datepickers.js" />
+    <Content Include="assets\js\pages\input-mask.js" />
+    <Content Include="assets\js\pages\lightbox.js" />
+    <Content Include="assets\js\pages\mailbox.js" />
+    <Content Include="assets\js\pages\navactive.js" />
+    <Content Include="assets\js\pages\select2.js" />
+    <Content Include="assets\js\pages\session-timeout.js" />
+    <Content Include="assets\js\pages\settings.js" />
+    <Content Include="assets\js\pages\text-editor.js" />
+    <Content Include="assets\js\pages\widgets.js" />
+    <Content Include="assets\js\Params.js" />
+    <Content Include="assets\js\Picking.js" />
+    <Content Include="assets\js\sweetalert2.all.min.js" />
+    <Content Include="assets\js\UsersMain.js" />
+    <Content Include="assets\plugins\apexcharts\apexcharts.css" />
+    <Content Include="assets\plugins\apexcharts\apexcharts.min.js" />
+    <Content Include="assets\plugins\blockUI\jquery.blockUI.min.js" />
+    <Content Include="assets\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\plugins\bootstrap\js\popper.min.js" />
+    <Content Include="assets\plugins\chartjs\chart.bundle.min.js" />
+    <Content Include="assets\plugins\countdown\jquery.countdown.min.js" />
+    <Content Include="assets\plugins\datatables\datatables.min.css" />
+    <Content Include="assets\plugins\datatables\datatables.min.js" />
+    <Content Include="assets\plugins\dropzone\min\dropzone.min.css" />
+    <Content Include="assets\plugins\dropzone\min\dropzone.min.js" />
+    <Content Include="assets\plugins\flatpickr\flatpickr.js" />
+    <Content Include="assets\plugins\flatpickr\flatpickr.min.css" />
+    <Content Include="assets\plugins\fullcalendar\lib\main.min.css" />
+    <Content Include="assets\plugins\fullcalendar\lib\main.min.js" />
+    <Content Include="assets\plugins\highlight\highlight.pack.js" />
+    <Content Include="assets\plugins\highlight\styles\github-gist.css" />
+    <Content Include="assets\plugins\idle-timer\idle-timer.min.js" />
+    <Content Include="assets\plugins\input-mask\jquery.inputmask.min.js" />
+    <Content Include="assets\plugins\jquery\jquery-3.5.1.min.js" />
+    <Content Include="assets\plugins\lightbox\fslightbox.js" />
+    <Content Include="assets\plugins\pace\pace.css" />
+    <Content Include="assets\plugins\pace\pace.min.js" />
+    <Content Include="assets\plugins\perfectscroll\perfect-scrollbar.css" />
+    <Content Include="assets\plugins\perfectscroll\perfect-scrollbar.min.js" />
+    <Content Include="assets\plugins\select2\css\select2.min.css" />
+    <Content Include="assets\plugins\select2\js\select2.full.min.js" />
+    <Content Include="assets\plugins\summernote\summernote-lite.min.css" />
+    <Content Include="assets\plugins\summernote\summernote-lite.min.js" />
     <Content Include="Content\bootstrap.rtl.min.css.map" />
     <Content Include="Content\bootstrap.rtl.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
@@ -182,6 +354,7 @@
     <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.1.min.map" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="SiteMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -919,14 +1092,6 @@
     </Content>
     <Content Include="Pages\Default.Master.designer.cs">
       <DependentUpon>Default.Master</DependentUpon>
-    </Content>
-    <Content Include="Pages\start.aspx" />
-    <Content Include="Pages\start.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>start.aspx</DependentUpon>
-    </Content>
-    <Content Include="Pages\start.aspx.designer.cs">
-      <DependentUpon>start.aspx</DependentUpon>
     </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
@@ -1672,6 +1837,27 @@
     <Content Include="Content\ui\vendor\summernote\summernote.min.js" />
     <Content Include="Content\ui\vendor\summernote\summernote.min.js.LICENSE.txt" />
     <Content Include="Content\ui\vendor\summernote\summernote.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\RPT\HANA\Lista_Empaque_Soarma.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Lista_Empaque_Soarma.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\RPT\HANA\rpt_Etiqueta_HANA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Etiqueta_HANA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\RPT\SQL\Lista_Empaque_Soarma.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Lista_Empaque_Soarma.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\RPT\SQL\rpt_Etiqueta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Etiqueta.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
