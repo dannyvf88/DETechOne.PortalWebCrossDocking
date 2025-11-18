@@ -66,10 +66,26 @@
     <Compile Include="DIConfig.cs" />
     <Compile Include="Data\Context\AppDbContext.cs" />
     <Compile Include="Data\Repositories\UserRepository.cs" />
+    <Compile Include="Migrations\202511030847336_InitialCreate.cs" />
+    <Compile Include="Migrations\202511030847336_InitialCreate.Designer.cs">
+      <DependentUpon>202511030847336_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511120524175_AddPermissionStructure.cs" />
+    <Compile Include="Migrations\202511120524175_AddPermissionStructure.Designer.cs">
+      <DependentUpon>202511120524175_AddPermissionStructure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\PasswordHasher.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202511030847336_InitialCreate.resx">
+      <DependentUpon>202511030847336_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511120524175_AddPermissionStructure.resx">
+      <DependentUpon>202511120524175_AddPermissionStructure.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

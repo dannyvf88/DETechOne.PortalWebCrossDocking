@@ -25,13 +25,13 @@ namespace DETechOne.PortalWebCrossDocking.Application.Services
             if (string.IsNullOrWhiteSpace(req?.Username) || string.IsNullOrWhiteSpace(req?.Password))
                 return new LoginResult { Success = false, ErrorMessage = "Credenciales inválidas." };
 
-            var user = await userRepository.GetByUsername(req.Username.Trim());
+            var user = await userRepository.GetByUsername(req.Username.Trim()).ConfigureAwait(false);
             if (user == null || !user.IsActive) return Fail();
 
             if (!passwordHasher.Verify(req.Password, user.PasswordHash, user.PasswordSalt)) return Fail();
 
-            var roles = await userRepository.GetRolesAsync(user.Id);
-            await userRepository.UpdateLastLoginAsync(user.Id);
+            var roles = await userRepository.GetRolesAsync(user.Id).ConfigureAwait(false);
+            await userRepository.UpdateLastLoginAsync(user.Id).ConfigureAwait(false);
 
             return new LoginResult { Success = true, UserId = user.Id, Username = user.Username, Roles = roles };
 

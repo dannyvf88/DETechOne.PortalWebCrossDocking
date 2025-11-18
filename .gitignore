@@ -81,28 +81,6 @@ App_Data/*.mdf
 App_Data/*.ldf
 App_Data/*.bak
 
-# **********************************************
-# IGNORAR ARCHIVOS Y CARPETAS GENERADOS
-# **********************************************
-
-# 1. Archivos de Visual Studio (Local User/Caches)
-# Ignorar toda la carpeta .vs/ (la más importante para evitar conflictos)
-.vs/
-*.suo
-*.user
-*.userprefs
-
-# 2. Archivos de compilación y binarios
-[Bb]in/
-[Oo]bj/
-*.dll
-*.pdb
-*.exe
-*.log
-*.ncb
-*.testsettings
-*.vssettings
-
 # Ignorar archivos de caché de compilación (los que mencionaste en obj/Debug/)
 *.cache
 *.dtbcache.json

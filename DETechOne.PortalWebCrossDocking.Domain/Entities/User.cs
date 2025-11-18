@@ -15,5 +15,6 @@ namespace DETechOne.PortalWebCrossDocking.Domain.Entities
         public string PasswordSalt { get; set; }
         public bool IsActive { get; set; }
         public DateTime? LastLoginAt { get; set; }
+        public virtual ICollection<UserRole> UserRoles { get; set; }
     }
 }

@@ -12,5 +12,6 @@ namespace DETechOne.PortalWebCrossDocking.Domain.Interfaces
         Task<User> GetByUsername(string username);
         Task<IList<string>> GetRolesAsync(int userId);
         Task UpdateLastLoginAsync(int userId);
+        Task<IList<string>> GetPermissionsAsync(int userId);
     }
 }

@@ -14,9 +14,14 @@ namespace DETechOne.PortalWebCrossDocking.Infrastructure.Data.Repositories
     {
         private readonly AppDbContext _db;
         public UserRepository(AppDbContext db) { _db = db; }
-        public Task<User> GetByUsername(string username)
+        public async Task<User> GetByUsername(string username)
         {
-            return _db.Users.AsNoTracking().FirstOrDefaultAsync(x => x.Username == username);
+            return await _db.Users.AsNoTracking().FirstOrDefaultAsync(x => x.Username == username || x.Email == username);
+        }
+
+        public async Task<IList<string>> GetPermissionsAsync(int userId)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<IList<string>> GetRolesAsync(int userId)
