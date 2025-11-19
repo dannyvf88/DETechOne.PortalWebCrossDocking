@@ -22,20 +22,28 @@ namespace DETechOne.PortalWebCrossDocking.Application.Services
 
         public async Task<LoginResult> LoginAsync(LoginRequest req)
         {
+
+            LoginResult Fail() => new LoginResult { Success = false, ErrorMessage = "Usuario o contraseña incorrectos." };
+
             if (string.IsNullOrWhiteSpace(req?.Username) || string.IsNullOrWhiteSpace(req?.Password))
                 return new LoginResult { Success = false, ErrorMessage = "Credenciales inválidas." };
 
             var user = await userRepository.GetByUsername(req.Username.Trim()).ConfigureAwait(false);
-            if (user == null || !user.IsActive) return Fail();
+
+            if (user == null || !user.IsActive)
+            {                
+                user = new User { PasswordHash = string.Empty, PasswordSalt = string.Empty };
+            }
 
             if (!passwordHasher.Verify(req.Password, user.PasswordHash, user.PasswordSalt)) return Fail();
 
             var roles = await userRepository.GetRolesAsync(user.Id).ConfigureAwait(false);
+
+            var permissions = await userRepository.GetPermissionsAsync(user.Id).ConfigureAwait(false);
+
             await userRepository.UpdateLastLoginAsync(user.Id).ConfigureAwait(false);
 
-            return new LoginResult { Success = true, UserId = user.Id, Username = user.Username, Roles = roles };
-
-            LoginResult Fail() => new LoginResult { Success = false, ErrorMessage = "Usuario o contraseña incorrectos." };
+            return new LoginResult { Success = true, UserId = user.Id, Username = user.Username, Roles = roles, Permissions = permissions };
 
         }
     }

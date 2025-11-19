@@ -46,18 +46,15 @@
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-=======
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
->>>>>>> 7196213009f0669cd082ac06fe47d75182c37476
     <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
     </Reference>
@@ -118,7 +115,7 @@
     <Content Include="assets\PDFs\Etiqueta_660.pdf" />
     <Content Include="assets\PDFs\Etiqueta_661.pdf" />
     <Content Include="assets\PDFs\Formatos_Impresion.pdf" />
-    <Content Include="assets\RPT\SQL\dev_rfc.log" />
+    <Content Include="ErrorLayout.Master" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Content\ui\img\backgrounds\error.svg" />
     <Content Include="Content\ui\img\backgrounds\lock-screen.svg" />
@@ -129,7 +126,9 @@
     <Content Include="Pages\Clientes.aspx" />
     <Content Include="Pages\customer-all.aspx" />
     <Content Include="Pages\customer.aspx" />
+    <Content Include="Pages\Home.aspx" />
     <Content Include="Pages\login.aspx" />
+    <Content Include="Pages\NotFound.aspx" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -138,29 +137,12 @@
     <Compile Include="App_Data\BundleConfig.cs" />
     <Compile Include="App_Data\NoMinify.cs" />
     <Compile Include="App_Data\RouteConfig.cs" />
-    <Compile Include="assets\RPT\HANA\Lista_Empaque_Soarma.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Lista_Empaque_Soarma.rpt</DependentUpon>
-      <SubType>Component</SubType>
+    <Compile Include="ErrorLayout.Master.cs">
+      <DependentUpon>ErrorLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="assets\RPT\HANA\rpt_Etiqueta_HANA.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rpt_Etiqueta_HANA.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="assets\RPT\SQL\Lista_Empaque_Soarma.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Lista_Empaque_Soarma.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="assets\RPT\SQL\rpt_Etiqueta.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rpt_Etiqueta.rpt</DependentUpon>
-      <SubType>Component</SubType>
+    <Compile Include="ErrorLayout.Master.designer.cs">
+      <DependentUpon>ErrorLayout.Master</DependentUpon>
     </Compile>
     <Compile Include="Pages\Clientes.aspx.cs">
       <DependentUpon>Clientes.aspx</DependentUpon>
@@ -187,6 +169,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Default.Master.designer.cs" />
+    <Compile Include="Pages\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -194,7 +183,17 @@
     <Compile Include="Pages\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\NotFound.aspx.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NotFound.aspx.designer.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecuredPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1839,25 +1838,10 @@
     <Content Include="Content\ui\vendor\summernote\summernote.min.js.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="assets\RPT\HANA\Lista_Empaque_Soarma.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Lista_Empaque_Soarma.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\RPT\HANA\rpt_Etiqueta_HANA.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rpt_Etiqueta_HANA.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\RPT\SQL\Lista_Empaque_Soarma.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Lista_Empaque_Soarma.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\RPT\SQL\rpt_Etiqueta.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rpt_Etiqueta.cs</LastGenOutput>
-    </EmbeddedResource>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Folder Include="assets\RPT\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

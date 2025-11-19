@@ -33,11 +33,40 @@ namespace DETechOne.PortalWebCrossDocking.Pages
                     Password = password
                 }).GetAwaiter().GetResult();
 
-                return new
+                if (result.Success)
                 {
-                    success = result.Success,
-                    message = result.Success ? "Login exitoso" : result.ErrorMessage
-                };
+                    var context = HttpContext.Current;
+
+                    System.Web.Security.FormsAuthentication.SetAuthCookie(
+                        result.Username, // Usar el nombre de usuario como identificador
+                        false            // Sesión no persistente (se cierra al cerrar el navegador)
+                    );
+
+                    context.Session["IsAuthenticated"] = true;
+                    context.Session["UserId"] = result.UserId;
+                    context.Session["Username"] = result.Username;
+                    context.Session["Roles"] = result.Roles;
+                    context.Session["Permissions"] = result.Permissions;
+
+                    return new
+                    {
+                        success = result.Success,
+                        message = "Login exitoso",
+                        redirectUrl = "Home.aspx",
+                        roles = result.Roles
+                    };
+                }
+                else {
+
+                    return new
+                    {
+                        success = false,
+                        message = result.ErrorMessage
+                    };
+
+                }
+
+                
             }
             catch (Exception ex)
             {

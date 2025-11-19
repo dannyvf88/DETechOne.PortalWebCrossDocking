@@ -13,5 +13,7 @@ namespace DETechOne.PortalWebCrossDocking.Application.DTOs
         public int? UserId { get; set; }
         public string Username { get; set; }
         public IList<string> Roles { get; set; } = new List<string>();
+        public IList<string> Permissions { get; set; } = new List<string>();
+
     }
 }

@@ -56,12 +56,11 @@
             </div>
 
             <div class="app-menu">
-                <ul class="accordion-menu">
-
+                <ul class="accordion-menu">                    
                     <%--Administracion--%>
                     <li class="sidebar-title" id="idAdmin">Administracion</li>
                     <li class="active-page" id="idHome">
-                        <a href="Default.aspx" class="active"><i class="material-icons-two-tone">dashboard</i>Home</a>
+                        <a href="Home.aspx" class="active"><i class="material-icons-two-tone">dashboard</i>Home</a>
                     </li>
                     <li id="idNotificaciones">
                         <a href="#"><i class="material-icons-two-tone">notifications</i>Notificaciones<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
